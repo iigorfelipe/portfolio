@@ -1,5 +1,14 @@
+import SettingsProvider from "./contexts/settings/provider";
+import Header from "./components/header";
+import { AppRoutes } from "./routes";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <SettingsProvider>
+      <Header />
+      <AppRoutes />
+    </SettingsProvider>
+  );
 };
 
 export default App;
