@@ -1,5 +1,6 @@
 import SettingsProvider from "./contexts/settings/provider";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import { AppRoutes } from "./routes";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <SettingsProvider>
       <Header />
       <AppRoutes />
+      <Footer />
     </SettingsProvider>
   );
 };
