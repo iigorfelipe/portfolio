@@ -21,6 +21,11 @@ const Header = () => {
     setAnchorEl(null);
   };
 
+  const handleLang = (lang: string) => {
+    setLang(lang);
+    handleClose();
+  };
+
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
@@ -51,10 +56,10 @@ const Header = () => {
             }}
           >
             <Box sx={{ display: 'flex', flexDirection: 'column', p: '5px', gap: '2px'}}>
-              <IconButton onClick={() => setLang('en')}>
+              <IconButton onClick={() => handleLang('en')}>
                 <img src="/usa-flag.png" />
               </IconButton>
-              <IconButton onClick={() => setLang('br')}>
+              <IconButton onClick={() => handleLang('br')}>
                 <img src="/brazil-flag.png" />
               </IconButton>
             </Box>

@@ -24,6 +24,7 @@ const NavBar = () => {
         alignItems: 'center',
         justifyContent: 'center',
         gap: '8px',
+        mb: '5%'
       }}
     >
 
@@ -49,8 +50,11 @@ const NavBar = () => {
         {lang === 'en' ? 'about' : 'sobre'}                    
       </Typography>
       /
-      <Typography sx={{ cursor: 'pointer' }}>
-      {lang === 'en' ? 'resume' : 'currículo'} {<OpenInNewIcon sx={{ width: '10px', height: '10px', p: '0px', mb: '4px' }} />}                      
+      <Typography
+        sx={{ cursor: 'pointer' }}
+        onClick={() => window.open('/resume.pdf', '_blank')}
+      >
+        {lang === 'en' ? 'resume' : 'currículo'} {<OpenInNewIcon sx={{ width: '10px', height: '10px', p: '0px', mb: '4px' }} />}                      
       </Typography>
 
     </Box>
