@@ -81,18 +81,22 @@ const Work = () => {
                               gap: '10px',
                             }}
                           >
-                            <Typography 
-                              sx={{
-                                cursor: 'pointer',
-                                '&:hover': {
-                                  textDecoration: 'underline'
-                                }
-                              }}
-                              onClick={() => window.open(appLink, '_blank')}
-                            >
-                              {lang === 'en' ? 'See the app running' : 'Veja a aplicação rodando'}
-                              <OpenInNewIcon sx={{ width: '10px', height: '10px', p: '0px', mb: '4px' }} />
-                            </Typography>
+                            {
+                              project !== 'eSports' && (
+                                <Typography 
+                                  sx={{
+                                    cursor: 'pointer',
+                                    '&:hover': {
+                                      textDecoration: 'underline'
+                                    }
+                                  }}
+                                  onClick={() => window.open(appLink, '_blank')}
+                                >
+                                  {lang === 'en' ? 'See the app running' : 'Veja a aplicação rodando'}
+                                  <OpenInNewIcon sx={{ width: '10px', height: '10px', p: '0px', mb: '4px' }} />
+                                </Typography>
+                              )
+                            }
                             <Typography 
                               sx={{
                                 cursor: 'pointer',
@@ -156,7 +160,7 @@ const Work = () => {
                   </Box>
                 ))
               }
-              <Divider sx={{ width: '100%', m: isSmDown ? '20p' : '50px 0px' }} />
+              <Divider sx={{ width: '100%', m: '50px 0px' }} />
             </Box>
           ))
         }
