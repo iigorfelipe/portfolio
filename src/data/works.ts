@@ -38,7 +38,7 @@ export const works: Works[] = [
     media: [
       {
         viewMode: 'desktop',
-        path: '/github-explorer.gif',
+        path: '/portfolio/github-explorer.gif',
         alt: 'gif'
       },
       {
@@ -62,7 +62,7 @@ export const works: Works[] = [
       },
       {
         viewMode: 'mobile',
-        path: '/eSports-mobile.gif',
+        path: '/portfolio/eSports-mobile.gif',
         alt: 'gif'
       },      
     ],
@@ -76,12 +76,12 @@ export const works: Works[] = [
     media: [
       {
         viewMode: 'mobile',
-        path: '/list.gif',
+        path: 'https://user-images.githubusercontent.com/87145566/339927540-f81767a1-8aec-4100-9c9d-e977ed731471.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240614%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240614T231523Z&X-Amz-Expires=300&X-Amz-Signature=e07e77529fe1c87ebe411adefc1aaccaedbaaeaf591ef9f5b8403620494926b1&X-Amz-SignedHeaders=host&actor_id=87145566&key_id=0&repo_id=812394815',
         alt: 'gif'
       },
       {
         viewMode: 'mobile',
-        path: '/list2.gif',
+        path: 'https://user-images.githubusercontent.com/87145566/339927306-82963693-d9a9-471e-96e2-f3e4637f1cf8.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240614%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240614T231637Z&X-Amz-Expires=300&X-Amz-Signature=908e0e9b91d9adca8689657e04d895c14861e32c770767ba2601b6914b21b1ff&X-Amz-SignedHeaders=host&actor_id=87145566&key_id=0&repo_id=812394815',
         alt: 'gif'
       },    
     ],

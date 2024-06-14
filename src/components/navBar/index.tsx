@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Box, Typography } from '@mui/material'
 import OpenInNewIcon from '@mui/icons-material/OpenInNewOutlined';
 import { useSettings } from '../../contexts/settings';
@@ -8,7 +8,16 @@ import { useSettings } from '../../contexts/settings';
 const NavBar = () => {
   const { lang } = useSettings();
   const [currentTab, setCurrentTab] = useState('work');
+
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname.split('/').pop();
+    if (path && (path === 'work' || path === 'about')) {
+      setCurrentTab(path);
+    }
+  }, [location]);
 
   const handleNavigation = (tab: string) => {
     if (tab !== currentTab) {
