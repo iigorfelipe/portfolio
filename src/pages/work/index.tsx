@@ -2,28 +2,10 @@ import { useState } from 'react';
 import { Box, Divider, Typography } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNewOutlined';
 import { useSettings } from '../../contexts/settings';
-
-const teste = [
-  {
-    project: 'Invoice Insight',
-    gifs: ['/invoice-insight-settings.gif', '/invoice-insight-user.gif'],
-    appLink: 'https://iigorfelipe.github.io/invoice-insight/',
-    githubLink: 'https://github.com/iigorfelipe/invoice-insight',
-    descriptionEn:  'Performance listing of clients and services by month. Includes graph and filtering by period.',
-    descriptionBr: 'Listagem performática de clientes e prestações por mês. Inclui gráfico e filtragem por períodos.',
-  },
-  {
-    project: 'Github Explorer',
-    gifs: ['/github-explorer.gif', '/github-explorer.gif'],
-    appLink: 'https://iigorfelipe.github.io/github-explorer/',
-    githubLink: 'https://github.com/iigorfelipe/github-explorer',
-    descriptionEn: 'Explore GitHub repositories with ease. Filtering by type, language and sorting available.',
-    descriptionBr: 'Explore repositórios GitHub com facilidade. Filtragem por tipo, linguagem e ordenação disponíveis.',
-  },
-]
+import { works } from '../../data/works';
 
 const Work = () => {
-  const { lang } = useSettings();
+  const { lang, isSmDown } = useSettings();
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
 
   const handleTooltipPosition = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
@@ -53,7 +35,7 @@ const Work = () => {
         }}
       >
         {
-          teste.map(({ project, gifs, descriptionBr, descriptionEn, appLink, githubLink }) => (
+          works.map(({ project, media, descriptionBr, descriptionEn, appLink, githubLink }) => (
             <Box
               key={project}
               sx={{
@@ -61,31 +43,31 @@ const Work = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexWrap: 'wrap',
-                width: '800px'
+                width: isSmDown ? '300px' : '800px',
               }}
             >
               {
-                gifs.map((gif, index) => (
+                media.map(({ path, viewMode, alt }, index) => (
                   <Box
-                    key={project+gif+index}
+                    key={project+path}
                     sx={{
                       display: 'flex',
-                      flexDirection: index === 1 ? 'row-reverse' : 'row',
-                      mt: index === 1 ? '20px' : '0px',
-                      gap: '20px',
+                      flexDirection: isSmDown ? 'column-reverse' : (index === 1 ? 'row-reverse' : 'row'),
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      mt: isSmDown ? '0px' : (index === 1 ? '20px' : '0px'),
+                      gap: isSmDown ? '0px' : '20px',
                     }}
                   >
                     <Box
                       sx={{
-                        width: '400px',
+                        width: isSmDown ? '300px' : '400px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         textAlign: 'center',
-                        p: '70px',
+                        p: isSmDown ? '20px' : '70px',
                         borderRadius: '20px',
-                        // border: `1px solid #99ffff`,
-                        // backgroundColor: '#99ffff'
                       }}
                     >
                       {
@@ -130,17 +112,16 @@ const Work = () => {
 
                     <Box
                       sx={{
-                        width: '400px',
+                        width: viewMode === 'mobile' ? '150px' : (isSmDown ? '300px' : '400px'),
                         position: 'relative',
-                        display: 'flex',
+                        display: 'flex',                        
                         alignItems: 'center',
-                        justifyContent: 'center',      
-                                        
+                        justifyContent: 'center',                             
                       }}
                     >
                       <img
-                        src={gif}
-                        alt="GIF"
+                        src={path}
+                        alt={alt}
                         style={{
                           width: '100%',
                           height: '100%',
@@ -148,7 +129,7 @@ const Work = () => {
                           borderRadius: '20px',
 
                         }}
-                        onClick={() => window.open(gif, '_blank')}
+                        onClick={() => window.open(path, '_blank')}
                         onMouseMove={handleTooltipPosition}
                         onMouseLeave={handleTooltipClose}
                       />
@@ -175,7 +156,7 @@ const Work = () => {
                   </Box>
                 ))
               }
-              <Divider sx={{ width: '100%', m: '50px 0px' }} />
+              <Divider sx={{ width: '100%', m: isSmDown ? '20p' : '50px 0px' }} />
             </Box>
           ))
         }
