@@ -4,6 +4,11 @@ import { contacts } from "../../data/contacts";
 
 const YEAR = '2024';
 
+const linkStyle = {
+  textDecoration: 'none',
+  color: 'inherit'
+};
+
 const Footer = () => {
   const { theme, lang, isSmDown } = useSettings();
 
@@ -31,19 +36,13 @@ const Footer = () => {
       >
         <Link
           href="https://wa.me/5598991595038"
-          sx={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}
+          sx={linkStyle}
         >
           (98) 9 9159-5038
         </Link>
         <Link
           href="mailto:iigorfelipe@example.com"
-          sx={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}
+          sx={linkStyle}
         >
           iigorfelipe@gmail.com
         </Link>
@@ -87,7 +86,13 @@ const Footer = () => {
           mb: isSmDown ? '20px' : 0
         }}
       >
-        <Typography>{lang === 'en' ? 'Project Github' : 'Gituhub do projeto'}</Typography>
+        <Typography></Typography>
+        <Link
+          href="https://github.com/iigorfelipe/portfolio"
+          sx={linkStyle}
+        >
+          {lang === 'en' ? 'Project Github' : 'Gituhub do projeto'}
+        </Link>
         <Typography>{lang === 'en' ? 'version' : 'versão'} {YEAR}</Typography>
       </Box>
     </Box>
