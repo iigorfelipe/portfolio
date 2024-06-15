@@ -76,12 +76,12 @@ export const works: Works[] = [
     media: [
       {
         viewMode: 'mobile',
-        path: '/portfolio/list.gif',
+        path: 'https://github.com/iigorfelipe/lets-organize/assets/87145566/201bb38b-a548-4bdd-bbc7-7b34325302c9',
         alt: 'gif'
       },
       {
         viewMode: 'mobile',
-        path: '/portfolio/list2.gif',
+        path: 'https://github.com/iigorfelipe/lets-organize/assets/87145566/2e8cca66-4c12-4625-98e5-9df8b6e5af68',
         alt: 'gif'
       },    
     ],
@@ -114,7 +114,7 @@ export const works: Works[] = [
     media: [
       {
         viewMode: 'desktop',
-        path: 'https://github-production-user-asset-6210df.s3.amazonaws.com/87145566/295727772-6a5311fd-d7ba-456b-ad40-36a588f3fd65.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240614%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240614T164558Z&X-Amz-Expires=300&X-Amz-Signature=6baec1561dbc8b5ab8a91d85e476134a998c3b1d52175307d8387c837a8a7a83&X-Amz-SignedHeaders=host&actor_id=87145566&key_id=0&repo_id=543754666',
+        path: 'https://user-images.githubusercontent.com/87145566/295727772-6a5311fd-d7ba-456b-ad40-36a588f3fd65.png',
         alt: 'img'
       },
       {
