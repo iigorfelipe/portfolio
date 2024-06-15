@@ -57,10 +57,10 @@ const Header = () => {
           >
             <Box sx={{ display: 'flex', flexDirection: 'column', p: '5px', gap: '2px'}}>
               <IconButton onClick={() => handleLang('en')}>
-                <img src="/usa-flag.png" />
+                <img src="/portfolio/usa-flag.png" />
               </IconButton>
               <IconButton onClick={() => handleLang('br')}>
-                <img src="/brazil-flag.png" />
+                <img src="/portfolio/brazil-flag.png" />
               </IconButton>
             </Box>
           </Popover>
