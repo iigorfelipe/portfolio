@@ -36,12 +36,14 @@ const Footer = () => {
       >
         <Link
           href="https://wa.me/5598991595038"
+          target="_blank"
           sx={linkStyle}
         >
           (98) 9 9159-5038
         </Link>
         <Link
           href="mailto:iigorfelipe@example.com"
+          target="_blank"
           sx={linkStyle}
         >
           iigorfelipe@gmail.com
@@ -89,6 +91,7 @@ const Footer = () => {
         <Typography></Typography>
         <Link
           href="https://github.com/iigorfelipe/portfolio"
+          target="_blank"
           sx={linkStyle}
         >
           {lang === 'en' ? 'Project Github' : 'Gituhub do projeto'}
