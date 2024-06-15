@@ -61,7 +61,7 @@ const NavBar = () => {
       /
       <Typography
         sx={{ cursor: 'pointer' }}
-        onClick={() => window.open('/resume.pdf', '_blank')}
+        onClick={() => window.open('/portfolio/resume.pdf', '_blank')}
       >
         {lang === 'en' ? 'resume' : 'currículo'} {<OpenInNewIcon sx={{ width: '10px', height: '10px', p: '0px', mb: '4px' }} />}                      
       </Typography>
