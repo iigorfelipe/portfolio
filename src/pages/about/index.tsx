@@ -14,8 +14,8 @@ const About = () => {
         flexDirection: isSmDown ? 'column' : 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        height: 'calc(100vh - 100px)',
-        mt: '-100px',
+        height: isSmDown ? '100%' : 'calc(100vh - 100px)',
+        mt: isSmDown ? '0px' : '-100px',
         gap: '30px',
         p: isSmDown ? '20px' : '0',
       }}
