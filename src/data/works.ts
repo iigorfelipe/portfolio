@@ -72,6 +72,25 @@ export const works: Works[] = [
     descriptionBr: 'Encontre o seu duo publicando um anúncio nos seus jogos favoritos',
   },
   {
+    project: 'Tractian',
+    media: [
+      {
+        viewMode: 'desktop',
+        path: 'https://github.com/iigorfelipe/tractian-challenge/assets/87145566/539fa31c-d31c-4e13-98d5-dbb1f13c0031',
+        alt: 'gif'
+      },
+      {
+        viewMode: 'mobile',
+        path: 'https://github.com/iigorfelipe/tractian-challenge/assets/87145566/3d426e0f-6854-40a6-8b91-744b539fde15',
+        alt: 'gif'
+      },      
+    ],
+    appLink: 'https://iigorfelipe.github.io/tractian-challenge/',
+    githubLink: 'https://github.com/iigorfelipe/tractian-challenge',
+    descriptionEn: "Hierarchical visualization of a company's assets, including components, assets, and locations.",
+    descriptionBr: 'Visualização hierárquica dos ativos de uma empresa, abrangendo componentes, ativos e localizações',
+  },
+  {
     project: 'list',
     media: [
       {
