@@ -53,6 +53,25 @@ export const works: Works[] = [
     descriptionBr: 'Explore repositórios GitHub com facilidade. Filtragem por tipo, linguagem e ordenação disponíveis.',
   },
   {
+    project: 'Plann.er',
+    media: [
+      {
+        viewMode: 'desktop',
+        path: 'https://github.com/user-attachments/assets/d6c262b6-1eb5-4b41-9dfe-139bbb447272',
+        alt: 'gif',
+      },
+      {
+        viewMode: 'desktop',
+        path: 'https://github.com/user-attachments/assets/398fc057-5c60-439a-9a00-0f9395fc6abd',
+        alt: 'img',
+      },
+    ],
+    appLink: '',
+    githubLink: 'https://github.com/iigorfelipe/planner',
+    descriptionEn: 'Desktop site for creating travel plans with friends, registering activities, and saving useful links',
+    descriptionBr: 'Site desktop para montar planos de viagem com amigos, registrar atividades e links úteis',
+  },
+  {
     project: 'eSports',
     media: [
       {
