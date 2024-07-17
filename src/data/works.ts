@@ -53,12 +53,32 @@ export const works: Works[] = [
     descriptionBr: 'Explore repositórios GitHub com facilidade. Filtragem por tipo, linguagem e ordenação disponíveis.',
   },
   {
+    project: 'Woovi',
+    media: [
+      {
+        viewMode: 'mobile',
+        path: 'https://github.com/user-attachments/assets/19cf46a5-b644-4f71-bc4e-6c5e3781c3d5',
+        alt: 'img'
+      },
+      {
+        viewMode: 'mobile',
+        path: 'https://github.com/user-attachments/assets/50e42c20-ef16-4843-9d7e-94a0fba6774e',
+        alt: 'img'
+      },
+      
+    ],
+    appLink: 'https://iigorfelipe.github.io/woovi/',
+    githubLink: 'https://github.com/iigorfelipe/woovi',
+    descriptionEn: 'Payment Guide: Pix and Installment Credit Card on Woovi',
+    descriptionBr: 'Guia de Pagamento: Pix e Cartão de Crédito Parcelado no Woovi',
+  },
+  {
     project: 'Plann.er',
     media: [
       {
         viewMode: 'desktop',
         path: 'https://github.com/user-attachments/assets/d6c262b6-1eb5-4b41-9dfe-139bbb447272',
-        alt: 'gif',
+        alt: 'img',
       },
       {
         viewMode: 'desktop',
