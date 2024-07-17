@@ -82,7 +82,7 @@ const Work = () => {
                             }}
                           >
                             {
-                              project !== 'eSports' && (
+                              appLink.trim().length > 0 && (
                                 <Typography 
                                   sx={{
                                     cursor: 'pointer',
