@@ -73,6 +73,26 @@ export const works: Works[] = [
     descriptionBr: 'Guia de Pagamento: Pix e Cartão de Crédito Parcelado no Woovi',
   },
   {
+    project: 'Miro clone',
+    media: [
+      {
+        viewMode: 'desktop',
+        path: 'https://github.com/user-attachments/assets/03f98a90-7461-44fc-b587-807acd3fa6c1',
+        alt: 'gif'
+      },
+      {
+        viewMode: 'desktop',
+        path: 'https://github.com/user-attachments/assets/5ab503c5-78d6-408d-9ec6-22e7e72b6404',
+        alt: 'img'
+      },
+      
+    ],
+    appLink: 'https://miro-clone-pearl.vercel.app/',
+    githubLink: 'https://github.com/iigorfelipe/miro-clone',
+    descriptionEn: 'Real-time collaborative whiteboard tool',
+    descriptionBr: 'Ferramenta de quadro branco colaborativo em tempo real',
+  },
+  {
     project: 'Plann.er',
     media: [
       {
